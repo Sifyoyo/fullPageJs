@@ -1,0 +1,69 @@
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+main{
+    height: 100%;
+}
+
+main section:first-child{
+    background-color: salmon;
+}
+
+main section:last-child{
+    background-color: aquamarine;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#first-section{
+
+}
+
+#second-section{
+    transform: translateY(100vh);
+    background-color: greenyellow;
+}
+
+#third-section{
+    transform: translateY(100vh);
+}
+
+nav#customScrollAnchors{
+    position: fixed;
+    z-index: 0;
+    top: 50vh;
+    right: 0px;
+}
+
+nav div{
+    background-color: #1B213D;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    margin: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.activePoint{
+    background:radial-gradient(#1B213D,#A2BFD9);
+    width:20px;
+    height:20px;
+    cursor: default;
+}
